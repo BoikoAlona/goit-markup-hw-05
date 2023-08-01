@@ -803,10 +803,15 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border: 1px solid var(--white, #FFF);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     background-color: transparent;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    color: #ffffff;
 }
 
 .footer-input::placeholder {
-    color: #FFF;
+    color: #FFFFFF;
     font-size: 2;
     line-height: 24px;
     letter-spacing: 0.03em;
@@ -814,19 +819,26 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-form-btn {
+    min-width: 165px;
+    font-family: "Roboto", sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 16px;width: 165px;
+    gap: 16px;
     height: 40px;
     padding: 8px 24px;
     border-radius: 4px;
     background: #4D5AE5;
     color: #FFF;
-    font-family: Roboto;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    cursor: pointer;
+    border: none;
+}
+
+.subscribe-icon {
+    margin-left: 16px;
 }
