@@ -659,7 +659,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-field {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 .input-wrap {
@@ -675,14 +675,14 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 0 11px 0 38px;
     color: #2E2F42;
     outline: transparent;
-    /* transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: transparent;
 }
 
-/* .modal-input:is(:hover, :focus) + .input-icon {
+.modal-input:focus + .input-icon {
     fill: #4D5AE5;
-} */
+}
 
 .modal-input:is(:hover, :focus) {
     border-color: #4D5AE5;
@@ -710,9 +710,8 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     height: 120px;
     border-radius: 4px;
     border: 1px solid rgba(46, 47, 66, 0.40);
-    /* background-color: #FCFCFC; */
     padding: 0 11px 0 38px;
-    /* outline: transparent; */
+    outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     resize: none;
     padding: 8px 16px;
@@ -748,7 +747,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: #4D5AE5;
 }
 
-.check-terms {
+.check-terms span {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -761,10 +760,14 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-check:checked + .check-terms {
+.modal-check:checked + .check-terms span {
     border: none;
     background-color: #404BBF;
     fill: #F4F4FD;
+}
+
+.modal-field-checkbox {
+    margin-bottom: 24px;
 }
 
 .send-btn {
