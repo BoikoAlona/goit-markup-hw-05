@@ -419,7 +419,7 @@ body {
 .logo-social-media {
     display: flex;
     align-items: baseline;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .footer-logo-slogan {
@@ -440,6 +440,10 @@ body {
 
 .footer-logo-color {
     color: #F4F4FD;
+}
+
+.social-media {
+    margin-right: 80px;
 }
 
 .social-media-title {
@@ -640,7 +644,7 @@ body {
 }
 
 .modal-btn-icon {
-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
@@ -663,7 +667,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-field-comment {
-margin-bottom: 16px;
+    margin-bottom: 16px;
 }
 
 .input-wrap {
@@ -684,7 +688,7 @@ margin-bottom: 16px;
     background-color: transparent;
 }
 
-.modal-input:focus + .input-icon {
+.modal-input:is(:hover, :focus) + .input-icon {
     fill: #4D5AE5;
 }
 
@@ -726,7 +730,7 @@ margin-bottom: 16px;
     background-color: transparent;
 }
 
-.modal-text-area:focus {
+.modal-text-area:is(:hover, :focus) {
     border-color: #4D5AE5;
 }
 
@@ -742,7 +746,6 @@ margin-bottom: 16px;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    /* display: flex; */
     align-items: center;
     margin-bottom: 24px;
 }
@@ -796,6 +799,11 @@ margin-bottom: 16px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.send-btn:hover,
+.send-btn:focus {
+    background-color: #404BBF;
+}
+
 .subscribe-title {
     color: #FFF;
     font-weight: 500;
@@ -844,7 +852,6 @@ margin-bottom: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 16px;
     height: 40px;
     padding: 8px 24px;
     border-radius: 4px;
@@ -857,6 +864,12 @@ margin-bottom: 16px;
     letter-spacing: 0.04em;
     cursor: pointer;
     border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-form-btn:hover,
+.footer-form-btn:focus {
+    background-color: #404BBF;
 }
 
 .subscribe-icon {
